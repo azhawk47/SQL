@@ -1,0 +1,12 @@
+CREATE TABLE stoneburg (id INTEGER PRIMARY KEY, Type TEXT, Color TEXT, Thickness INTEGER, Price_SF  NUMERIC, Price_Group INTEGER);
+
+INSERT INTO stoneburg VALUES (1, "Granite", "Ubatuba", 3, 6.99, 1);
+INSERT INTO stoneburg VALUES (2, "Marble", "Carrara", 2, 9.99, 1);
+INSERT INTO stoneburg VALUES (3, "Quartzite", "Mont Blanc", 2, 24.99, 5);
+INSERT INTO stoneburg VALUES (4, "Granite", "Amarone", 3, 18.99, 4);
+INSERT INTO stoneburg VALUES (5, "Quartz", "Calacatta Oro", 2, 12.99, 3);
+INSERT INTO stoneburg VALUES (6, "Granite", "Carioca Gold", 3, 13.29, 2);
+INSERT INTO stoneburg VALUES (7, "Quartz", "Calacatta De Luca", 2, 19.81, 5);
+
+SELECT * FROM stoneburg ORDER BY Price_Group;
+SELECT MAX(Price_SF) FROM stoneburg;
